@@ -1,0 +1,71 @@
+ [
+  {
+    "id": 1,
+    "image": "./public/images/black-panther.jpg",
+    "clicked": false
+  },
+
+  {
+    "id": 2,
+    "image": "./public/images/black-widow.jpg",
+    "clicked": false
+  },
+
+  {
+    "id": 3,
+    "image": "./public/images/cptn-america2.jpg",
+    "clicked": false
+  },
+  {
+    "id": 4,
+    "image": "./public/images/cptn-marvel.jpg",
+    "clicked": false
+  },
+
+  {
+    "id": 5,
+    "image": "./public/images/Gamora.jpg",
+    "clicked": false
+  },
+
+  {
+    "id": 6,
+    "image": "./public/images/Groot.jpg",
+    "clicked": false
+  },
+
+  {
+    "id": 7,
+    "image": "./public/images/hawkeye.jpg",
+    "clicked": false
+  },
+
+  {
+    "id": 8,
+    "image": "./public/images/hulk.jpg",
+    "clicked": false
+  },
+
+  {
+    "id": 9,
+    "image": "./public/images/iron-man.jpg",
+    "clicked": false
+  },
+  {
+    "id": 10,
+    "image": "./public/images/Scarlet-Witch.jpg",
+    "clicked": false
+  },
+
+  {
+    "id": 11,
+    "image": "./public/images/spiderman.jpg",
+    "clicked": false
+  },
+
+  {
+    "id": 12,
+    "image": "./public/images/thor.jpg",
+    "clicked": false
+  }
+]
