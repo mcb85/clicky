@@ -2,18 +2,22 @@ import React, { Component }  from "react";
 import Hero from "../components/Hero";
 import Container from "../components/Container";
 import Card from "../components/Card";
+import images from "../images.json";
 //import { render } from "@testing-library/react";
 
 //function Home() {
-
-//const unshuffledImages = [, "black-panther.jpg", "black-widow", ];
-
-/*let shuffled = unshuffled
+let unshuffled = images;
+let shuffled = unshuffled
   .map((a) => ({ sort: Math.random(), value: a }))
   .sort((a, b) => a.sort - b.sort)
-  .map((a) => a.value);*/
+  .map((a) => a.value)
 
-
+/*function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+}*/
 
 class Home extends Component {
   state = {
@@ -25,7 +29,7 @@ class Home extends Component {
   handleClick = () => {
     this.setState({
       clicked: !this.state.clicked,
-      //score
+      score: this.state.score + 1
     });
   };
 
@@ -37,11 +41,11 @@ class Home extends Component {
           <h3 className="text-white">{this.welcomeMessage}</h3>
         </Hero>
         <Container>
-          <Card value={this.state.clicked}
-            onChange={this.handleClick}>
-          </Card>
-
-
+      <Card
+            //name={images[0].name}
+            //image={images[0].image}
+            onChange={this.handleClick}
+          />
         </Container>
       </div>
     );

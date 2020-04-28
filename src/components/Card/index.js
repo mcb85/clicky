@@ -7,15 +7,16 @@ import CardBtn from "../CardBtn"
 
 
 
-function Card() {
+function Card(props) {
   return (
     <div className="wrapper">
       <Row>
         <Col size="sm-4">
-          <CardBtn>
-          <div className="card" id="gamora">
-            <img src={"../images/Gamora.jpg"} alt="gamora" />
-          </div></CardBtn>
+          
+            <div className="card" id="gamora">
+              <img src={"../images/Gamora.jpg"} alt="gamora" />
+            </div>
+        
         </Col>
 
         <Col size="sm-4">
