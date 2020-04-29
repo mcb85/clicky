@@ -5,13 +5,13 @@ import Card from "../components/Card";
 import images from "../images.json";
 //import { render } from "@testing-library/react";
 
-//function Home() {
-let unshuffled = images;
-let shuffled = unshuffled
-  .map((a) => ({ sort: Math.random(), value: a }))
-  .sort((a, b) => a.sort - b.sort)
-  .map((a) => a.value)
-
+function Shuffle() {
+  var unshuffled = images;
+  var shuffled = unshuffled
+    .map((a) => ({ sort: Math.random(), value: a }))
+    .sort((a, b) => a.sort - b.sort)
+    .map((a) => a.value)
+}
 /*function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -38,13 +38,13 @@ class Home extends Component {
       <div>
         <Hero backgroundImage="./images/double-bubble-dark.png">
           <h1>Clicky Game</h1>
-          <h3 className="text-white">{this.welcomeMessage}</h3>
+          <h3 className="text-white">{this.state.welcomeMessage}</h3>
         </Hero>
         <Container>
       <Card
             //name={images[0].name}
             //image={images[0].image}
-            onChange={this.handleClick}
+            onClick={this.handleClick}
           />
         </Container>
       </div>
