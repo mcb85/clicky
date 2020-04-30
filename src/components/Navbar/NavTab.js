@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import "./style.css";
 
 
@@ -11,28 +10,28 @@ const styles = {
 };
 
 
-function Navbar() {
+function Navbar(props) {
   return (
     <nav className="navbar navbar-expand-lg navbar-light text-white bg-primary">
-      <Link className="navbar-brand text-white" to="/">
+      <a className="navbar-brand text-white" href="/">
         Clicky Game
-      </Link>
+      </a>
       <div>
         <ul className="navbar-nav">
           <li className="nav-item">
-            <Link
-              to="/"
+            <a
+              href="/"
               className={
                 window.location.pathname === "/"
                   ? "nav-link active"
                   : "nav-link"
               }
-            ></Link>
+            ></a>
           </li>
-          <h2>Click an Image to Begin!</h2>
+          <h2>{props.navMessage}</h2>
           <span>
             <h2 style={styles.navbarStyle} id="score">
-              Score:0
+              <h3>{props.scoreMessage} </h3>
             </h2>
           </span>
         </ul>

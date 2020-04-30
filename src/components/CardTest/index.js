@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 import Row from "../Row.js";
-import Col from "../Col.js";
+import Col from "../Col/index.js";
 import CardBtn from "../CardBtn"
 
 function Card(props) {

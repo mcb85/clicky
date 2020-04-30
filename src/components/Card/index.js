@@ -1,8 +1,8 @@
 import React from "react";
 import "./style.css";
 import Row from "../Row.js";
-import Col from "../Col.js";
-import CardBtn from "../CardBtn"
+import Col from "../Col/index";
+//import CardBtn from "../CardBtn"
 
 
 
@@ -13,14 +13,14 @@ function Card(props) {
       <Row>
         <Col size="sm-4">
           
-            <div className="card" id="gamora">
-              <img src={"../images/Gamora.jpg"} alt="gamora" />
+            <div className="card" id="gamora" onClick={props.custom}>
+              <img src={"../images/gamora.jpg"} alt="gamora" />
             </div>
         
         </Col>
 
         <Col size="sm-4">
-          <div className="card" id="blackWidow">
+          <div className="card" id="black-widow">
             <img src={"../images/black-widow.jpg"} alt="black-widow" />
           </div>
         </Col>
@@ -34,13 +34,13 @@ function Card(props) {
       <Row>
         <Col size="sm-4">
           <div className="card" id="capt-america">
-            <img src={"../images/cptn-america2.jpg"} alt="capt-america" />
+            <img src={"../images/capt-america.jpg"} alt="capt-america" />
           </div>
         </Col>
 
         <Col size="sm-4">
           <div className="card" id="capt-marvel">
-            <img src={"../images/cptn-marvel.jpg"} alt="capt-marvel" />
+            <img src={"../images/capt-marvel.jpg"} alt="capt-marvel" />
           </div>
         </Col>
 
@@ -74,7 +74,7 @@ function Card(props) {
       <Row>
         <Col size="sm-4">
           <div className="card" id="scarlet-witch">
-            <img src={"../images/Scarlet-Witch.jpg"} alt="scarlet" />
+            <img src={"../images/scarlet-witch.jpg"} alt="scarlet" />
           </div>
         </Col>
 
