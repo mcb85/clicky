@@ -1,21 +1,21 @@
 import React, { Component }  from "react";
 import Hero from "../components/Hero";
 import Container from "../components/Container";
-import Navbar from "../components/Navbar/NavTab";
+// import Navbar from "../components/Navbar/NavTab";
 //import Card from "../components/Card";
 import HeroCard from "../components/HeroCard/HeroCard";
-import images from "../images.json";
+// import images from "../images.json";
 import Row from "../components/Row";
 import Col from "../components/Col/index.js";
 //import { render } from "@testing-library/react";
 
-function Shuffle() {
-  var unshuffled = images;
-  var shuffled = unshuffled
-    .map((a) => ({ sort: Math.random(), value: a }))
-    .sort((a, b) => a.sort - b.sort)
-    .map((a) => a.value)
-}
+// function Shuffle() {
+//   var unshuffled = images;
+//   var shuffled = unshuffled
+//     .map((a) => ({ sort: Math.random(), value: a }))
+//     .sort((a, b) => a.sort - b.sort)
+//     .map((a) => a.value)
+// }
 /*function shuffleArray(array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));

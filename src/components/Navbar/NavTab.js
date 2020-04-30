@@ -3,11 +3,11 @@ import "./style.css";
 
 
 
-const styles = {
-  navbarStyle: {
-    justifyContent: "flex-end",
-  },
-};
+// const styles = {
+//   navbarStyle: {
+//     justifyContent: "flex-end",
+//   },
+// };
 
 
 function Navbar(props) {
@@ -16,7 +16,7 @@ function Navbar(props) {
       <a className="navbar-brand text-white" href="/">
         Clicky Game
       </a>
-      <div>
+      {/* <div>
         <ul className="navbar-nav">
           <li className="nav-item">
             <a
@@ -35,7 +35,7 @@ function Navbar(props) {
             </h2>
           </span>
         </ul>
-      </div>
+      </div> */}
     </nav>
   );
 }
